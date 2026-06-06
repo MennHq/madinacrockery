@@ -1,0 +1,7 @@
+{
+  "name": "Madina Crockery Store",
+  "description": "Sargodha's premier wholesale crockery supplier since 1949. Quality steel crockery and bulk supplies at wholesale rates.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

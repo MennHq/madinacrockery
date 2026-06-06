@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "A crockery or kitchenware item for sale.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name of the product" },
+        "description": { "type": "string", "description": "Detailed description" },
+        "price": { "type": "number", "description": "Retail price" },
+        "wholesalePrice": { "type": "number", "description": "Wholesale price for bulk buyers" },
+        "category": { "type": "string", "description": "Category (e.g., Dinner Sets, Glassware)" },
+        "imageUrl": { "type": "string", "description": "URL of the product image" },
+        "stock": { "type": "number", "description": "Current stock level" },
+        "isFeatured": { "type": "boolean", "description": "Whether to show on homepage" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "description", "category", "imageUrl"]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "A customer inquiry or order request.",
+      "type": "object",
+      "properties": {
+        "customerName": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "message": { "type": "string" },
+        "productId": { "type": "string", "description": "Optional product ID the inquiry is about" },
+        "type": { "type": "string", "enum": ["retail", "wholesale"], "description": "Type of inquiry" },
+        "status": { "type": "string", "enum": ["new", "contacted", "closed"], "description": "Status of the inquiry" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["customerName", "phone", "message"]
+    },
+    "User": {
+      "title": "User",
+      "description": "User profile and roles.",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "customer"] },
+        "displayName": { "type": "string" }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "products": {
+      "schema": "Product",
+      "description": "Collection of kitchenware products."
+    },
+    "inquiries": {
+      "schema": "Inquiry",
+      "description": "Collection of customer inquiries."
+    },
+    "users": {
+      "schema": "User",
+      "description": "User profiles and roles."
+    }
+  }
+}

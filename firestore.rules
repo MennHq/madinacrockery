@@ -1,0 +1,66 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: products
+    // Fields: name (string), description (string), price (number), wholesalePrice (number), category (string), imageUrl (string), stock (number), isFeatured (bool), createdAt (timestamp)
+    //
+    // Collection: inquiries
+    // Fields: customerName (string), phone (string), message (string), productId (string), type (string), status (string), createdAt (timestamp)
+    //
+    // Collection: users
+    // Fields: email (string), role (string), displayName (string)
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function isValidEmail(email) {
+      return email is string && email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+    function isValidProduct(data) {
+      return data.name is string && data.name.size() > 0 && data.name.size() < 200 &&
+             data.description is string && data.description.size() < 2000 &&
+             data.category is string &&
+             data.imageUrl is string;
+    }
+
+    function isValidInquiry(data) {
+      return data.customerName is string && data.customerName.size() > 0 &&
+             data.phone is string && data.phone.size() > 0 &&
+             data.message is string && data.message.size() > 0;
+    }
+
+    // ===============================================================
+    // Rules (RELAXED FOR TESTING ADMIN WITHOUT FIREBASE AUTH)
+    // ===============================================================
+
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if true; // Relaxed for testing
+    }
+
+    match /inquiries/{inquiryId} {
+      allow read: if true; // Relaxed for testing
+      allow create: if isValidInquiry(request.resource.data);
+      allow update, delete: if true; // Relaxed for testing
+    }
+
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
