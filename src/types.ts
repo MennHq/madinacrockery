@@ -13,13 +13,15 @@ export interface Product {
 
 export interface Inquiry {
   id: string;
-  customerName: string;
+  customerName?: string;
+  customer_name?: string;
   phone: string;
   message: string;
   productId?: string;
-  type: 'retail' | 'wholesale';
+  type: 'retail' | 'wholesale' | 'wholesale_inquiry';
   status: 'new' | 'contacted' | 'closed';
-  createdAt: any;
+  createdAt?: any;
+  created_at?: string;
 }
 
 export interface UserProfile {

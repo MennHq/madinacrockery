@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { db } from '../firebase';
+import { supabase } from '../lib/supabase';
 import { Phone, Mail, MapPin, Send, Clock, CheckCircle2, Loader2 } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -18,18 +17,21 @@ export default function Contact() {
     if (loading) return;
     setLoading(true);
     try {
-      await addDoc(collection(db, 'inquiries'), {
-        customerName: formData.name,
-        phone: formData.phone,
-        message: formData.message,
-        type: 'wholesale_inquiry',
-        status: 'new',
-        createdAt: serverTimestamp()
-      });
+      const { error } = await supabase.from('inquiries').insert([
+        {
+          customer_name: formData.name,
+          phone: formData.phone,
+          message: formData.message,
+          type: 'wholesale_inquiry',
+          status: 'new'
+        }
+      ]);
+      
+      if (error) throw error;
       setSent(true);
     } catch (err) {
       console.error(err);
-      alert("Something went wrong. Please try again.");
+      alert("Something went wrong. Please try again. Make sure your Supabase URL is correct.");
     } finally {
       setLoading(false);
     }
@@ -188,12 +190,13 @@ export default function Contact() {
           className="mt-32 h-[600px] rounded-3xl overflow-hidden shadow-2xl border border-border"
         >
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.511111111111!2d72.6747222!3d32.0766667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3921770000000000%3A0x0!2zMzLCsDA0JzM2LjAiTiA3MsKwNDAnMjkuMCJF!5e0!3m2!1sen!2s!4v1647330000000!5m2!1sen!2s" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211.27508401881164!2d72.66328893739967!3d32.08543700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392177a9c457be69%3A0xf6777d7327b3ec71!2sMadina%20Crockery%20Store!5e0!3m2!1sen!2sus!4v1780751089194!5m2!1sen!2sus" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
             allowFullScreen={true} 
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
             title="Madina Crockery Store Location"
           ></iframe>
         </motion.div>

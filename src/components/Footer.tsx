@@ -11,7 +11,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <div className="col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-8">
-              <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-accent/10">M</div>
+              <div className="w-16 h-16 flex items-center justify-center">
+                <img src="https://i.postimg.cc/dVc9yL3F/Untitled-1.png" alt="Madina Crockery Store Logo" className="w-full h-full object-contain" />
+              </div>
               <span className="text-text-primary font-serif font-bold text-xl tracking-tight uppercase">Madina Crockery Store</span>
             </Link>
             <p className="text-sm leading-relaxed mb-8 max-w-md font-medium">

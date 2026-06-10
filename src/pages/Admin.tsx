@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { collection, query, getDocs, updateDoc, doc, orderBy, deleteDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { supabase } from '../lib/supabase';
 import { Inquiry, UserProfile } from '../types';
 import { MessageSquare, LayoutDashboard, Clock, CheckCircle, Phone, Mail, Package, Settings, Undo2, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -50,8 +49,9 @@ export default function Admin({ user, onLogin }: AdminProps) {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const inqSnap = await getDocs(query(collection(db, 'inquiries'), orderBy('createdAt', 'desc')));
-        setInquiries(inqSnap.docs.map(d => ({ id: d.id, ...d.data() } as Inquiry)));
+        const { data, error } = await supabase.from('inquiries').select('*').order('created_at', { ascending: false });
+        if (error) throw error;
+        setInquiries((data || []).map(d => ({ ...d, customerName: d.customer_name }) as Inquiry));
       } catch (err) {
         console.error(err);
       } finally {
@@ -124,7 +124,8 @@ export default function Admin({ user, onLogin }: AdminProps) {
 
   const finalizeDeletion = async (pd: PendingDeletion) => {
     try {
-      await deleteDoc(doc(db, 'inquiries', pd.inquiry.id));
+      const { error } = await supabase.from('inquiries').delete().eq('id', pd.inquiry.id);
+      if (error) throw error;
       if (pendingDeletion?.inquiry.id === pd.inquiry.id) {
         setPendingDeletion(null);
       }
@@ -138,8 +139,8 @@ export default function Admin({ user, onLogin }: AdminProps) {
 
     clearTimeout(pendingDeletion.timeoutId);
     setInquiries(prev => [pendingDeletion.inquiry, ...prev].sort((a, b) => {
-      const dateA = a.createdAt?.toDate().getTime() || 0;
-      const dateB = b.createdAt?.toDate().getTime() || 0;
+      const dateA = a.created_at ? new Date(a.created_at).getTime() : 0;
+      const dateB = b.created_at ? new Date(b.created_at).getTime() : 0;
       return dateB - dateA;
     }));
     setPendingDeletion(null);
@@ -147,7 +148,8 @@ export default function Admin({ user, onLogin }: AdminProps) {
 
   const handleUpdateInquiryStatus = async (id: string, status: Inquiry['status']) => {
     try {
-      await updateDoc(doc(db, 'inquiries', id), { status });
+      const { error } = await supabase.from('inquiries').update({ status }).eq('id', id);
+      if (error) throw error;
       setInquiries(inquiries.map(inq => inq.id === id ? { ...inq, status } : inq));
     } catch (err) {
       console.error(err);
@@ -262,7 +264,7 @@ export default function Admin({ user, onLogin }: AdminProps) {
                             }`}>
                               {inq.status}
                             </span>
-                            <span className="text-xs text-secondary">{inq.createdAt?.toDate().toLocaleDateString()}</span>
+                            <span className="text-xs text-secondary">{inq.created_at ? new Date(inq.created_at).toLocaleDateString() : (inq.createdAt ? inq.createdAt.toDate().toLocaleDateString() : '')}</span>
                           </div>
                           <h3 className="text-xl font-bold text-primary">{inq.customerName}</h3>
                           <div className="flex flex-wrap gap-6 text-sm text-secondary">

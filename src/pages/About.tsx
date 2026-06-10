@@ -61,7 +61,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-border">
                 <img 
-                  src="https://images.unsplash.com/photo-1584990333910-ef908182df83?auto=format&fit=crop&q=80&w=1000" 
+                  src="https://avatars.mds.yandex.net/get-altay/19871159/2a0000019e9bc1f869db52a8a9cc82188e9d/XXXL" 
                   alt="Store Heritage" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

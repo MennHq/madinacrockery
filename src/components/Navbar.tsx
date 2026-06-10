@@ -41,7 +41,9 @@ export default function Navbar({ user, onLogin, onLogout }: NavbarProps) {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-3">
-              <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-accent/10">M</div>
+              <div className="w-16 h-16 flex items-center justify-center">
+                <img src="https://i.postimg.cc/dVc9yL3F/Untitled-1.png" alt="Madina Crockery Store Logo" className="w-full h-full object-contain" />
+              </div>
               <div className="flex flex-col">
                 <span className="text-text-primary font-serif font-bold text-lg leading-none tracking-tight">MADINA</span>
                 <span className="text-brand-red text-[10px] uppercase tracking-[0.2em] font-bold">Crockery Store</span>
