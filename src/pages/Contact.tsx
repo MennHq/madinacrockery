@@ -6,15 +6,29 @@ import { motion } from 'motion/react';
 export default function Contact() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorObj, setErrorObj] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     message: ''
   });
 
+  const validatePakistaniPhone = (phone: string) => {
+    const cleanPhone = phone.replace(/[\s\-\(\)]/g, '');
+    const pkPhoneRegex = /^(?:(?:\+92)|(?:0092)|(?:92)|0)?3\d{9}$/;
+    return pkPhoneRegex.test(cleanPhone);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (loading) return;
+    setErrorObj('');
+
+    if (!validatePakistaniPhone(formData.phone)) {
+      setErrorObj('Please enter a valid Pakistani phone or WhatsApp number (e.g. 03001234567).');
+      return;
+    }
+
     setLoading(true);
     try {
       const { error } = await supabase.from('inquiries').insert([
@@ -22,7 +36,7 @@ export default function Contact() {
           customer_name: formData.name,
           phone: formData.phone,
           message: formData.message,
-          type: 'wholesale_inquiry',
+          type: 'general_inquiry',
           status: 'new'
         }
       ]);
@@ -54,7 +68,7 @@ export default function Contact() {
             transition={{ delay: 0.1 }}
             className="text-secondary max-w-2xl mx-auto text-xl font-medium"
           >
-            Do you want to buy in wholesale? Or want to visit our shop? We are here to help you.
+            Looking for something specific? Need a repair or have a query? We are here to help you.
           </motion.p>
         </div>
 
@@ -70,7 +84,7 @@ export default function Contact() {
                 <Phone size={28} />
               </div>
               <h3 className="text-2xl font-bold text-primary mb-2">Call Us</h3>
-              <p className="text-secondary mb-6">Call our wholesale team directly</p>
+              <p className="text-secondary mb-6">Call us regarding any query directly</p>
               <a href="tel:+92483723597" className="text-brand-blue font-bold text-xl hover:text-brand-blue/80 transition-colors">+92 48 3723597</a>
             </motion.div>
 
@@ -145,11 +159,15 @@ export default function Contact() {
                     <input
                       required
                       type="tel"
-                      placeholder="Enter your phone number"
+                      placeholder="Enter your phone number (e.g. 03001234567)"
                       className="w-full px-8 py-5 bg-primary border border-border rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 text-lg text-primary placeholder:text-secondary/50"
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => {
+                        setFormData({...formData, phone: e.target.value});
+                        if (errorObj) setErrorObj('');
+                      }}
                     />
+                    {errorObj && <p className="text-brand-red text-sm font-medium">{errorObj}</p>}
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -157,7 +175,7 @@ export default function Contact() {
                   <textarea
                     required
                     rows={6}
-                    placeholder="Tell us what you want to buy in bulk..."
+                    placeholder="Tell us what you are looking for..."
                     className="w-full px-8 py-5 bg-primary border border-border rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 text-lg text-primary placeholder:text-secondary/50"
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}

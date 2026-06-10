@@ -113,18 +113,18 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 lg:gap-16 w-full"
+            className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 lg:gap-0 w-full"
           >
-            <div className="max-w-3xl flex-1 md:pr-12">
+            <div className="max-w-3xl flex-1 md:pr-8 lg:pr-12">
               <span className="inline-block px-4 py-1.5 bg-brand-blue/5 text-brand-blue rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-brand-blue/10">
                 Established Since 1949
               </span>
-              <h1 className="text-6xl md:text-9xl font-serif font-bold leading-[0.9] mb-8 tracking-tighter text-text-primary">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold leading-[0.9] mb-8 tracking-tighter text-text-primary">
                 Madina <br />
                 <span className="text-brand-red">Crockery Store</span>
               </h1>
               <p className="text-lg text-text-secondary mb-12 leading-relaxed max-w-xl font-medium">
-                Sargodha's most oldest and best shop for steel crockery. We are selling quality items for more than 75 years.
+                Sargodha's oldest and best shop for steel crockery, kitchenware, and dinner sets, trusted for over 75 years in Karkhana Bazaar.
               </p>
               <div className="flex flex-wrap gap-8 items-center">
                 <a href="#contact" className="px-12 py-5 bg-accent text-white rounded-full font-bold hover:bg-accent/90 transition-all shadow-lg shadow-accent/10 flex items-center gap-2 text-sm uppercase tracking-widest">
@@ -138,8 +138,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex-shrink-0 flex-1 flex justify-center md:justify-end w-full md:w-auto mb-8 md:mb-0 lg:-mr-12 lg:translate-x-12">
-              <img src="https://i.postimg.cc/dVc9yL3F/Untitled-1.png" alt="Madina Crockery Store Main Logo" className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[600px] lg:h-[600px] object-contain drop-shadow-2xl" />
+            <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto mb-8 md:mb-0 lg:-ml-24">
+              <img src="https://i.postimg.cc/dVc9yL3F/Untitled-1.png" alt="Madina Crockery Store Logo" className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[650px] lg:h-[650px] object-contain drop-shadow-2xl" />
             </div>
           </motion.div>
         </div>
@@ -166,7 +166,7 @@ export default function Home() {
             <div className="space-y-10">
               <h2 className="text-4xl md:text-6xl font-serif font-bold text-text-primary tracking-tight leading-tight">A Legacy of Quality in Sargodha</h2>
               <p className="text-lg text-text-secondary leading-relaxed">
-                Founded in 1949, Madina Crockery Store has grown from a local shop in Karkhana Bazar to one of the most respected wholesale suppliers in the region. We specialize in high-quality steel crockery, supplying both local households and surrounding towns in bulk.
+                Founded in 1949, Madina Crockery Store has grown from a local shop in Karkhana Bazaar to one of the most respected wholesale and retail suppliers in the region. We specialize in high-quality steel crockery, kitchenware, and dinner sets, supplying both local households and surrounding towns in bulk. Rated as the best Sargodha crockery store by our loyal customers.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-6">
                 <div className="space-y-4">

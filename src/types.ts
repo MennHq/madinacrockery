@@ -18,7 +18,7 @@ export interface Inquiry {
   phone: string;
   message: string;
   productId?: string;
-  type: 'retail' | 'wholesale' | 'wholesale_inquiry';
+  type: 'retail' | 'wholesale' | 'wholesale_inquiry' | 'general_inquiry';
   status: 'new' | 'contacted' | 'closed';
   createdAt?: any;
   created_at?: string;
