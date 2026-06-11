@@ -120,8 +120,7 @@ export default function Home() {
                 Established Since 1949
               </span>
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold leading-[0.9] mb-8 tracking-tighter text-text-primary">
-                Madina <br />
-                <span className="text-brand-red">Crockery Store</span>
+                Madina Crockery Store
               </h1>
               <p className="text-lg text-text-secondary mb-12 leading-relaxed max-w-xl font-medium">
                 Sargodha's oldest and best shop for steel crockery, kitchenware, and dinner sets, trusted for over 75 years in Karkhana Bazaar.
@@ -139,7 +138,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto mb-8 md:mb-0 lg:-ml-24">
-              <img src="https://i.postimg.cc/dVc9yL3F/Untitled-1.png" alt="Madina Crockery Store Logo" className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[650px] lg:h-[650px] object-contain drop-shadow-2xl" />
+              <img src="https://i.postimg.cc/dVc9yL3F/Untitled-1.png" alt="Madina Crockery Store" className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[650px] lg:h-[650px] object-contain drop-shadow-2xl" />
             </div>
           </motion.div>
         </div>
