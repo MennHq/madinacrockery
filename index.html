@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Madina Crockery Store</title>
+    <meta name="application-name" content="Madina Crockery Store" />
+    <meta name="apple-mobile-web-app-title" content="Madina Crockery Store" />
     <meta name="title" content="Madina Crockery Store" />
     <meta name="description" content="Established in 1949, Madina Crockery Store is the best and oldest wholesale crockery shop in Sargodha. Get premium steel crockery, kitchenware, and dinner sets at wholesale prices in Karkhana Bazaar." />
     <meta name="keywords" content="Madina Crockery sargodha, madina crockery sargodha, Madina Crockery, Madina Crockery Store, best sargodha crockery store, oldest crockery shop sargodha, wholesale crockery Pakistan, dinner sets Sargodha, kitchenware Sargodha, steel crockery sargodha, karkhana bazaar wholesale, best utensils sargodha" />
@@ -33,22 +35,43 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://madinacrockery.vercel.app/#website",
-      "url": "https://madinacrockery.vercel.app/",
-      "name": "Madina Crockery Store",
-      "alternateName": [
-        "Madina Crockery",
-        "Madina Crockery Sargodha"
-      ],
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://madinacrockery.vercel.app/?s={search_term_string}"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://madinacrockery.vercel.app/#website",
+          "url": "https://madinacrockery.vercel.app/",
+          "name": "Madina Crockery Store",
+          "alternateName": [
+            "Madina Crockery",
+            "Madina Crockery Sargodha",
+            "Madina Crockery Store Sargodha"
+          ],
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://madinacrockery.vercel.app/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
         },
-        "query-input": "required name=search_term_string"
-      }
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://madinacrockery.vercel.app/#localbusiness",
+          "url": "https://madinacrockery.vercel.app/",
+          "name": "Madina Crockery Store",
+          "description": "Sargodha's oldest and best wholesale shop for high-quality steel crockery.",
+          "image": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
+          "telephone": "+92483723597",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Karkhana Bazaar",
+            "addressLocality": "Sargodha",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        }
+      ]
     }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">

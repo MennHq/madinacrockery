@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madinacrockery.vercel.app/sitemap.xml

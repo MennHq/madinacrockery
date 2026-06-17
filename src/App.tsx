@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
+import NotFound from './pages/NotFound';
 
 // Components
 import Navbar from './components/Navbar';
@@ -39,6 +40,7 @@ function AnimatedRoutes({ user, login }: { user: UserProfile | null, login: (ema
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="/madinacrockerymanage/*" element={<PageWrapper><Admin user={user} onLogin={login} /></PageWrapper>} />
+        <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );

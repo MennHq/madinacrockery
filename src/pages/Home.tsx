@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, ShieldCheck, Truck, Users, MapPin, Phone, Clock, Award, Quote, Package } from 'lucide-react';
 import { motion } from 'motion/react';
+import StructuredData from '../components/StructuredData';
 
 export default function Home() {
   const reviews = [
@@ -96,6 +97,7 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden bg-bg-primary text-text-primary">
+      <StructuredData />
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center bg-bg-primary">
         <div className="absolute inset-0 z-0">

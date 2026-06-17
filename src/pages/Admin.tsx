@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
 import { Inquiry, UserProfile } from '../types';
-import { MessageSquare, LayoutDashboard, Clock, CheckCircle, Phone, Mail, Package, Settings, Undo2, X } from 'lucide-react';
+import { MessageSquare, LayoutDashboard, Clock, CheckCircle, Phone, Mail, Package, Settings, Undo2, X, Home } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface AdminProps {
@@ -22,6 +22,7 @@ export default function Admin({ user, onLogin }: AdminProps) {
   const [emailInput, setEmailInput] = useState('');
   const [pendingDeletion, setPendingDeletion] = useState<PendingDeletion | null>(null);
   const [countdown, setCountdown] = useState(5);
+  const [secretClicks, setSecretClicks] = useState(0);
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
@@ -69,37 +70,74 @@ export default function Admin({ user, onLogin }: AdminProps) {
   };
 
   if (user?.role !== 'admin') {
+    if (secretClicks >= 4) {
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-primary p-4">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="max-w-md w-full bg-secondary p-10 rounded-3xl shadow-xl border border-border text-center"
+          >
+            <div className="w-20 h-20 bg-brand-blue/10 text-brand-blue rounded-3xl flex items-center justify-center mx-auto mb-8 border border-brand-blue/20">
+              <Settings size={40} />
+            </div>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-4 tracking-tight">Admin Access</h2>
+            <p className="text-secondary mb-8">Please enter your admin email to manage the shop.</p>
+            
+            <form onSubmit={handleLogin} className="space-y-4 mb-8">
+              <input
+                type="email"
+                placeholder="Enter admin email"
+                value={emailInput}
+                onChange={(e) => setEmailInput(e.target.value)}
+                className="w-full px-6 py-4 bg-primary border border-border rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 text-primary"
+                required
+              />
+              <button
+                type="submit"
+                className="w-full py-4 bg-brand-blue text-white rounded-2xl font-bold hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/20"
+              >
+                Login to Manage
+              </button>
+            </form>
+            
+            <Link to="/" className="text-brand-blue font-bold hover:underline">Go back to Home</Link>
+          </motion.div>
+        </div>
+      );
+    }
+    
     return (
-      <div className="min-h-screen flex items-center justify-center bg-primary p-4">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="max-w-md w-full bg-secondary p-10 rounded-3xl shadow-xl border border-border text-center"
+      <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-secondary">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-2xl mx-auto"
         >
-          <div className="w-20 h-20 bg-brand-blue/10 text-brand-blue rounded-3xl flex items-center justify-center mx-auto mb-8 border border-brand-blue/20">
-            <Settings size={40} />
-          </div>
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4 tracking-tight">Admin Access</h2>
-          <p className="text-secondary mb-8">Please enter your admin email to manage the shop.</p>
-          
-          <form onSubmit={handleLogin} className="space-y-4 mb-8">
-            <input
-              type="email"
-              placeholder="Enter admin email"
-              value={emailInput}
-              onChange={(e) => setEmailInput(e.target.value)}
-              className="w-full px-6 py-4 bg-primary border border-border rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 text-primary"
-              required
-            />
-            <button
-              type="submit"
-              className="w-full py-4 bg-brand-blue text-white rounded-2xl font-bold hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/20"
+          <span className="inline-block text-sm font-bold tracking-widest text-brand-red uppercase mb-4">
+            Error 404
+          </span>
+          <h1 className="text-6xl md:text-8xl font-serif font-bold mb-6 tracking-tighter text-text-primary">
+            Page Not Found
+          </h1>
+          <p className="text-xl text-text-secondary mb-10 leading-relaxed max-w-xl mx-auto">
+            The page you are looking for might have been removed, had its{' '}
+            <span 
+              onClick={() => setSecretClicks(prev => prev + 1)} 
+              className="cursor-text"
             >
-              Login to Manage
-            </button>
-          </form>
-          
-          <Link to="/" className="text-brand-blue font-bold hover:underline">Go back to Home</Link>
+              name changed
+            </span>
+            , or is temporarily unavailable.
+          </p>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 bg-text-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-brand-red hover:text-white hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
+          >
+            <Home className="w-5 h-5" />
+            Explore Madina Crockery
+          </Link>
         </motion.div>
       </div>
     );
