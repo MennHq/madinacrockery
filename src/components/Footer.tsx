@@ -20,8 +20,8 @@ export default function Footer() {
               Sargodha's best and oldest shop for steel crockery. We have been selling quality items since 1949. We sell at wholesale prices.
             </p>
             <div className="flex gap-6">
-              <button onClick={() => setShowPending(true)} className="text-text-secondary hover:text-brand-blue transition-colors"><Facebook size={20} /></button>
-              <button onClick={() => setShowPending(true)} className="text-text-secondary hover:text-brand-blue transition-colors"><Instagram size={20} /></button>
+              <button onClick={() => setShowPending(true)} className="text-text-secondary hover:text-brand-blue transition-colors" aria-label="Facebook"><Facebook size={20} /></button>
+              <a href="https://www.instagram.com/madinacrockerystore/" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-brand-blue transition-colors" aria-label="Instagram"><Instagram size={20} /></a>
             </div>
           </div>
 

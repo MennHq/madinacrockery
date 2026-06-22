@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Star, ShieldCheck, Truck, Users, MapPin, Phone, Clock, Award, Quote, Package } from 'lucide-react';
 import { motion } from 'motion/react';
 import StructuredData from '../components/StructuredData';
+import FAQSection from '../components/FAQSection';
 
 export default function Home() {
   const reviews = [
@@ -269,6 +270,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Location & Contact Section */}
       <section id="contact" className="py-40 bg-bg-secondary text-text-primary">
