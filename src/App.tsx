@@ -9,6 +9,7 @@ import Lenis from 'lenis';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
 
@@ -39,6 +40,7 @@ function AnimatedRoutes({ user, login }: { user: UserProfile | null, login: (ema
         <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+        <Route path="/blog" element={<PageWrapper><Blog /></PageWrapper>} />
         <Route path="/madinacrockerymanage/*" element={<PageWrapper><Admin user={user} onLogin={login} /></PageWrapper>} />
         <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
       </Routes>

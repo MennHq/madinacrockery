@@ -18,4 +18,52 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog?post=best-crockery-shop-sargodha</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog?post=everyday-dishes-material-guide</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog?post=how-to-identify-high-quality-plates</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog?post=wedding-dishes-on-budget-guide</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog?post=ceramic-vs-porcelain-plates-comparison</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog?post=durable-non-chipping-dishes-guide</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://madinacrockery.vercel.app/blog?post=stoneware-vs-ceramic-crockery-difference</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -28,21 +28,43 @@ export default function StructuredData() {
     "@id": "https://madinacrockery.vercel.app/#localbusiness",
     "url": "https://madinacrockery.vercel.app/",
     "name": "Madina Crockery Store",
-    "description": "Sargodha's oldest and best wholesale shop for high-quality steel crockery, kitchenware, and dinner sets.",
+    "description": "Sargodha's oldest and best wholesale shop for high-quality steel crockery, kitchenware, and wedding dinner sets since 1949.",
     "image": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
-    "telephone": "+92483723597",
+    "logo": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
+    "telephone": "+923207000700",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Karkhana Bazaar",
+      "streetAddress": "Karkhana Bazar, Block 6",
       "addressLocality": "Sargodha",
       "addressRegion": "Punjab",
+      "postalCode": "40100",
       "addressCountry": "PK"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 32.085437,
-      "longitude": 72.6632889
-    }
+      "latitude": 32.0836,
+      "longitude": 72.6711
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/madinacrockery",
+      "https://www.instagram.com/madinacrockerystore"
+    ]
   };
 
   const faqPageData = {
@@ -140,6 +162,51 @@ export default function StructuredData() {
     ]
   };
 
+  const shoppingCenterData = {
+    "@context": "https://schema.org",
+    "@type": "ShoppingCenter",
+    "@id": "https://madinacrockery.vercel.app/#shoppingcenter",
+    "url": "https://madinacrockery.vercel.app/",
+    "name": "Madina Crockery Store",
+    "description": "Sargodha's oldest and best wholesale shop for high-quality steel crockery, kitchenware, and wedding dinner sets since 1949.",
+    "image": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
+    "logo": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
+    "telephone": "+923207000700",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Karkhana Bazar, Block 6",
+      "addressLocality": "Sargodha",
+      "addressRegion": "Punjab",
+      "postalCode": "40100",
+      "addressCountry": "PK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.0836,
+      "longitude": 72.6711
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/madinacrockery",
+      "https://www.instagram.com/madinacrockerystore"
+    ]
+  };
+
   return (
     <>
       <script
@@ -153,6 +220,10 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(shoppingCenterData) }}
       />
     </>
   );

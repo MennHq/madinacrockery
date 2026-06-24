@@ -8,21 +8,31 @@ export default function Footer() {
   return (
     <footer className="bg-bg-primary text-text-secondary py-24 border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           <div className="col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-8">
               <div className="w-16 h-16 flex items-center justify-center">
                 <img src="https://i.postimg.cc/dVc9yL3F/Untitled-1.png" alt="Madina Crockery Store Logo" className="w-full h-full object-contain" />
               </div>
-              <span className="text-text-primary font-serif font-bold text-xl tracking-tight uppercase">Madina Crockery Store</span>
+              <span className="text-text-primary font-serif font-bold text-xl tracking-tight uppercase">Madina Crockery</span>
             </Link>
-            <p className="text-sm leading-relaxed mb-8 max-w-md font-medium">
-              Sargodha's best and oldest shop for steel crockery. We have been selling quality items since 1949. We sell at wholesale prices.
+            <p className="text-sm leading-relaxed mb-8 max-w-sm font-medium">
+              Sargodha's best and oldest shop for steel crockery, dinnerware, and premium kitchenware. Serving generations since 1949 at genuine wholesale prices.
             </p>
             <div className="flex gap-6">
               <button onClick={() => setShowPending(true)} className="text-text-secondary hover:text-brand-blue transition-colors" aria-label="Facebook"><Facebook size={20} /></button>
               <a href="https://www.instagram.com/madinacrockerystore/" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-brand-blue transition-colors" aria-label="Instagram"><Instagram size={20} /></a>
             </div>
+          </div>
+
+          <div>
+            <h3 className="text-text-primary font-serif font-bold text-xl mb-8">Quick Links</h3>
+            <ul className="space-y-4 text-sm font-medium">
+              <li><Link to="/" className="hover:text-brand-blue transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-brand-blue transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="hover:text-brand-blue transition-colors">Contact Us</Link></li>
+              <li><Link to="/blog" className="hover:text-brand-blue transition-colors">Crockery Blog & Guide</Link></li>
+            </ul>
           </div>
 
           <div>
