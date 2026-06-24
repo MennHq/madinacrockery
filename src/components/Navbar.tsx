@@ -34,6 +34,7 @@ export default function Navbar({ user, onLogin, onLogout }: NavbarProps) {
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
     { name: 'Blog', path: '/blog' },
+    { name: 'FAQ', path: '/faq' },
   ];
 
   return (

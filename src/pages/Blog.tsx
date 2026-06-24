@@ -72,7 +72,7 @@ export default function Blog() {
 
           <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Where to Find Us</h3>
           <p className="mb-6 leading-relaxed">
-            Our main wholesale showroom is situated in <strong>Karkhana Bazaar, Sargodha, Punjab, Pakistan</strong>. You can also easily access our customer support near <strong>Trust Plaza</strong>. For retail inquiries, bulk bookings, or to customize your wedding jahez package, feel free to visit us or contact our team directly at <a href="tel:+92483723597" className="text-accent underline font-bold">+92 48 3723597</a>.
+            Our main wholesale showroom is situated in <strong>Karkhana Bazaar, Sargodha, Punjab, Pakistan</strong>. You can also easily access our customer support near <strong>Trust Plaza</strong>. For retail inquiries, bulk bookings, or to customize your wedding jahez package, feel free to visit us or contact our team directly at <a href="tel:+92320700700" className="text-accent underline font-bold">0320-700700</a>.
           </p>
         </article>
       )
@@ -509,18 +509,12 @@ export default function Blog() {
                       transition={{ duration: 0.3, delay: idx * 0.05 }}
                       className="group bg-white border border-border rounded-[2.5rem] overflow-hidden hover:shadow-xl hover:shadow-text-primary/2 hover:border-brand-blue/35 transition-all flex flex-col h-full"
                     >
-                      <div className="aspect-[16/10] overflow-hidden relative bg-bg-secondary">
-                        <img
-                          src={post.image}
-                          alt={post.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <span className="absolute top-6 left-6 px-3.5 py-1.5 bg-white/90 backdrop-blur-md text-brand-blue rounded-full text-[10px] font-bold uppercase tracking-widest border border-border/40">
-                          {post.category}
-                        </span>
-                      </div>
                       <div className="p-8 flex flex-col flex-grow">
-                        <div className="flex items-center gap-4 text-xs font-bold text-text-secondary uppercase tracking-widest mb-4">
+                        <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-text-secondary uppercase tracking-widest mb-4">
+                          <span className="px-2.5 py-1 bg-brand-blue/5 text-brand-blue rounded-full text-[10px] border border-brand-blue/10">
+                            {post.category}
+                          </span>
+                          <span>•</span>
                           <span className="flex items-center gap-1.5"><Calendar size={13} /> {post.date}</span>
                           <span>•</span>
                           <span className="flex items-center gap-1.5"><Clock size={13} /> {post.readTime}</span>
@@ -571,14 +565,9 @@ export default function Blog() {
                 <ArrowLeft size={16} /> Back to all articles
               </button>
 
-              {/* Cover Image */}
-              <div className="aspect-[21/9] rounded-[2.5rem] overflow-hidden bg-bg-secondary mb-12 border border-border relative">
-                <img
-                  src={activePost.image}
-                  alt={activePost.title}
-                  className="w-full h-full object-cover"
-                />
-                <span className="absolute bottom-6 left-6 px-4 py-2 bg-white text-brand-blue rounded-full text-[10px] font-bold uppercase tracking-widest border border-border shadow-md">
+              {/* Category Badge */}
+              <div className="mb-6">
+                <span className="px-3.5 py-1.5 bg-brand-blue/5 text-brand-blue rounded-full text-[10px] font-bold uppercase tracking-[0.2em] border border-brand-blue/10">
                   {activePost.category}
                 </span>
               </div>
@@ -636,7 +625,7 @@ export default function Blog() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://wa.me/923207000700"
+                    href="https://wa.me/92320700700"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 bg-accent hover:bg-accent/90 text-white rounded-full font-bold uppercase tracking-widest text-xs transition-all shadow-lg shadow-accent/10"

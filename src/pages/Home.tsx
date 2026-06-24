@@ -272,7 +272,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <FAQSection />
+      <FAQSection limit={4} />
 
       {/* Location & Contact Section */}
       <section id="contact" className="py-40 bg-bg-secondary text-text-primary">
@@ -302,7 +302,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2 text-text-primary">Phone</h4>
-                    <a href="tel:+92483723597" className="text-text-secondary hover:text-brand-blue transition-colors">+92 48 3723597</a>
+                    <a href="tel:+92320700700" className="text-text-secondary hover:text-brand-blue transition-colors">0320-700700</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-8">

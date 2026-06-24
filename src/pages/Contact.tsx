@@ -85,7 +85,7 @@ export default function Contact() {
               </div>
               <h3 className="text-2xl font-bold text-primary mb-2">Call Us</h3>
               <p className="text-secondary mb-6">Call us regarding any query directly</p>
-              <a href="tel:+92483723597" className="text-brand-blue font-bold text-xl hover:text-brand-blue/80 transition-colors">+92 48 3723597</a>
+              <a href="tel:+92320700700" className="text-brand-blue font-bold text-xl hover:text-brand-blue/80 transition-colors">0320-700700</a>
             </motion.div>
 
             <motion.div 

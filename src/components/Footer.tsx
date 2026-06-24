@@ -32,6 +32,7 @@ export default function Footer() {
               <li><Link to="/about" className="hover:text-brand-blue transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-brand-blue transition-colors">Contact Us</Link></li>
               <li><Link to="/blog" className="hover:text-brand-blue transition-colors">Crockery Blog & Guide</Link></li>
+              <li><Link to="/faq" className="hover:text-brand-blue transition-colors">FAQs</Link></li>
             </ul>
           </div>
 
@@ -44,7 +45,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <Phone size={20} className="text-brand-blue shrink-0" />
-                <a href="tel:+92483723597" className="hover:text-brand-blue transition-colors">+92 48 3723597</a>
+                <a href="tel:+92320700700" className="hover:text-brand-blue transition-colors">0320-700700</a>
               </li>
               <li className="flex items-center gap-4">
                 <Mail size={20} className="text-brand-blue shrink-0" />

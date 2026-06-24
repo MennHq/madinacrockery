@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 interface FAQItem {
   id: string;
@@ -8,7 +9,7 @@ interface FAQItem {
   answer: string;
 }
 
-export default function FAQSection() {
+export default function FAQSection({ limit }: { limit?: number } = {}) {
   const faqs: FAQItem[] = [
     {
       id: 'faq-1',
@@ -67,6 +68,8 @@ export default function FAQSection() {
     }
   ];
 
+  const displayedFaqs = limit ? faqs.slice(0, limit) : faqs;
+
   const [openId, setOpenId] = useState<string | null>('faq-1');
 
   const toggleFAQ = (id: string) => {
@@ -81,15 +84,15 @@ export default function FAQSection() {
             Frequently Asked Questions
           </span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-text-primary tracking-tight mb-6">
-            AEO & Generative AI Optimized Answers
+            Answers to Common Questions
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto leading-relaxed">
-            Have questions about the best and oldest crockery shop in Sargodha? Find direct, direct-factual answers below.
+            Have questions about the best and oldest crockery shop in Sargodha? Find direct, fact-checked answers below.
           </p>
         </div>
 
         <div className="space-y-6">
-          {faqs.map((faq) => {
+          {displayedFaqs.map((faq) => {
             const isOpen = openId === faq.id;
             return (
               <div
@@ -142,6 +145,17 @@ export default function FAQSection() {
             );
           })}
         </div>
+
+        {limit && faqs.length > limit && (
+          <div className="text-center mt-16">
+            <Link
+              to="/faq"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white border border-border hover:bg-bg-secondary text-text-primary hover:text-brand-blue rounded-full font-bold uppercase tracking-widest text-xs transition-all shadow-sm"
+            >
+              View All Questions
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

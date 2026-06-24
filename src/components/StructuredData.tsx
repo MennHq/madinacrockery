@@ -31,7 +31,7 @@ export default function StructuredData() {
     "description": "Sargodha's oldest and best wholesale shop for high-quality steel crockery, kitchenware, and wedding dinner sets since 1949.",
     "image": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
     "logo": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
-    "telephone": "+923207000700",
+    "telephone": "+92320700700",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -171,7 +171,7 @@ export default function StructuredData() {
     "description": "Sargodha's oldest and best wholesale shop for high-quality steel crockery, kitchenware, and wedding dinner sets since 1949.",
     "image": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
     "logo": "https://i.postimg.cc/dVc9yL3F/Untitled-1.png",
-    "telephone": "+923207000700",
+    "telephone": "+92320700700",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
