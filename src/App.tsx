@@ -32,6 +32,100 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
   );
 }
 
+// SEO & Metadata Map for Routing and Canonical Tags
+const METADATA: Record<string, { title: string; description: string }> = {
+  '/': {
+    title: 'Madina Crockery Store | Best & Oldest Wholesale Shop in Sargodha',
+    description: 'Established in 1949, Madina Crockery Store is Sargodha’s oldest & best wholesale shop for high-quality dinner sets, steel crockery, and wedding package jahez items at Karkhana Bazaar.'
+  },
+  '/about': {
+    title: 'About Us | Madina Crockery Store Sargodha',
+    description: 'Serving generations since 1949, read the history of Madina Crockery Store, the trusted name for wholesale kitchenware and crockery in Sargodha.'
+  },
+  '/contact': {
+    title: 'Contact Us | Madina Crockery Store Sargodha',
+    description: 'Find address, map, contact numbers, and opening hours for Madina Crockery Store in Karkhana Bazaar, Sargodha. Get wholesale quotes today.'
+  },
+  '/blog': {
+    title: 'Crockery Blog & Buying Guide | Madina Crockery Store',
+    description: 'Expert tips on identifying high-quality plates, choosing ceramic vs porcelain, selecting wedding jahez packages, and maintaining premium utensils.'
+  },
+  '/faq': {
+    title: 'Frequently Asked Questions | Madina Crockery Store',
+    description: 'Answers to common questions about buying crockery wholesale, custom wedding jahez packages, secure packing, and store history in Sargodha.'
+  }
+};
+
+function SEOManager() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    const search = location.search;
+    
+    // Default meta values
+    let title = 'Madina Crockery Store | Best & Oldest Wholesale Shop in Sargodha';
+    let description = 'Established in 1949, Madina Crockery Store is Sargodha’s oldest & best wholesale shop for high-quality dinner sets, steel crockery, and wedding package jahez items.';
+
+    // Look up static route info
+    if (METADATA[path]) {
+      title = METADATA[path].title;
+      description = METADATA[path].description;
+    }
+
+    // For blog posts with query params (e.g., ?post=best-crockery-shop-sargodha)
+    if (path === '/blog' && search) {
+      const params = new URLSearchParams(search);
+      const postSlug = params.get('post');
+      if (postSlug) {
+        // Humanize the slug for title
+        const humanized = postSlug
+          .split('-')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ');
+        title = `${humanized} | Crockery Blog & Guide | Madina Crockery Store`;
+        description = `Read our comprehensive guide on ${humanized.toLowerCase()} from Madina Crockery Store. Expert tips and wholesale recommendations since 1949.`;
+      }
+    }
+
+    // Update document title
+    document.title = title;
+
+    // Update Meta Description
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta');
+      metaDesc.setAttribute('name', 'description');
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.setAttribute('content', description);
+
+    // Update OpenGraph Title
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', title);
+
+    // Update OpenGraph Description
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', description);
+
+    // Update OpenGraph URL
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    const fullUrl = `https://madinacrockery.vercel.app${path}${search}`;
+    if (ogUrl) ogUrl.setAttribute('content', fullUrl);
+
+    // Dynamic Canonical Link Update
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', fullUrl);
+  }, [location]);
+
+  return null;
+}
+
 function AnimatedRoutes({ user, login }: { user: UserProfile | null, login: (email: string) => void }) {
   const location = useLocation();
 
@@ -114,6 +208,7 @@ export default function App() {
 
   return (
     <Router>
+      <SEOManager />
       <div className="min-h-screen flex flex-col bg-primary font-sans text-primary">
         <Navbar user={user} onLogin={login} onLogout={logout} />
         <main className="flex-grow">
