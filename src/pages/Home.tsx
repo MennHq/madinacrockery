@@ -4,6 +4,7 @@ import { ArrowRight, Star, ShieldCheck, Truck, Users, MapPin, Phone, Clock, Awar
 import { motion } from 'motion/react';
 import StructuredData from '../components/StructuredData';
 import FAQSection from '../components/FAQSection';
+import RichResultShowcase from '../components/RichResultShowcase';
 
 export default function Home() {
   const reviews = [
@@ -270,6 +271,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Google SERP & Rating Rich Result Simulator */}
+      <RichResultShowcase />
 
       {/* FAQ Section */}
       <FAQSection limit={4} />
