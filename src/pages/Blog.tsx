@@ -72,7 +72,7 @@ export default function Blog() {
 
           <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Where to Find Us</h3>
           <p className="mb-6 leading-relaxed">
-            Our main wholesale showroom is situated in <strong>Karkhana Bazaar, Sargodha, Punjab, Pakistan</strong>. You can also easily access our customer support near <strong>Trust Plaza</strong>. For retail inquiries, bulk bookings, or to customize your wedding jahez package, feel free to visit us or contact our team directly at <a href="tel:+92320700700" className="text-accent underline font-bold">0320-700700</a>.
+            Our main wholesale showroom is situated in <strong>Karkhana Bazaar, Sargodha, Punjab, Pakistan</strong>. You can also easily access our customer support near <strong>Trust Plaza</strong>. For retail inquiries, bulk bookings, or to customize your wedding jahez package, feel free to visit us or contact our team directly at <a href="tel:+923207000700" className="text-accent underline font-bold">0320-7000700</a>.
           </p>
         </article>
       )
@@ -625,7 +625,7 @@ export default function Blog() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://wa.me/92320700700"
+                    href="https://wa.me/923207000700"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 bg-accent hover:bg-accent/90 text-white rounded-full font-bold uppercase tracking-widest text-xs transition-all shadow-lg shadow-accent/10"

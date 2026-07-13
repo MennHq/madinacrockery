@@ -302,7 +302,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2 text-text-primary">Phone</h4>
-                    <a href="tel:+92320700700" className="text-text-secondary hover:text-brand-blue transition-colors">0320-700700</a>
+                    <a href="tel:+923207000700" className="text-text-secondary hover:text-brand-blue transition-colors">0320-7000700</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-8">
