@@ -71,7 +71,7 @@ export default function Footer() {
               <X size={20} />
             </button>
             <div className="w-20 h-20 bg-brand-blue/5 text-brand-blue rounded-3xl flex items-center justify-center mx-auto mb-8 border border-brand-blue/10">
-              <Instagram size={36} />
+              <Facebook size={36} />
             </div>
             <h3 className="text-3xl font-serif font-bold text-text-primary mb-3">Coming Soon</h3>
             <p className="text-text-secondary mb-8 leading-relaxed">Our social media pages are being prepared. We will be online soon!</p>

@@ -136,7 +136,7 @@ export default function Home() {
                   <div className="flex text-brand-red">
                     {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
                   </div>
-                  <span className="text-xs font-bold text-text-secondary uppercase tracking-widest">4.0 Rating (350+ Reviews)</span>
+                  <span className="text-xs font-bold text-text-secondary uppercase tracking-widest">4.8 Rating (35+ Reviews)</span>
                 </div>
               </div>
             </div>

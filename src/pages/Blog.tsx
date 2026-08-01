@@ -357,6 +357,486 @@ export default function Blog() {
           </p>
         </article>
       )
+    },
+    {
+      id: 'post-8',
+      slug: 'essential-crockery-for-pakistani-weddings',
+      title: '15 Essential Crockery Items for Every Pakistani Wedding Registry',
+      description: 'The ultimate checklist for young couples setting up their new kitchen in Pakistan. Find out what you actually need for your bridal jahez package.',
+      category: 'Events',
+      readTime: '5 min read',
+      date: 'July 15, 2026',
+      author: 'Madina Wedding Planner',
+      image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=800',
+      tags: ['Wedding Jahez', 'Checklist', 'Bridal Guide'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Setting up a new home is an exciting milestone, and selecting the right crockery is a central part of Pakistani bridal traditions. A complete jahez package should balance luxury dinnerware for entertaining guests with heavy-duty items for everyday kitchen use.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">The Must-Have Checklist</h3>
+          <p className="mb-4 leading-relaxed">
+            Here are the top essential categories every wedding registry must include:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li><strong>Formal 72-Piece Dinner Set:</strong> Choose elegant bone china or porcelain with platinum or gold accents for hosting guests and Eid celebrations.</li>
+            <li><strong>Everyday Melamine Dinner Set:</strong> A robust, break-resistant, 36-piece melamine set is ideal for daily lunch and dinner.</li>
+            <li><strong>Heavy Gauge Stainless Steel Cooking Pots:</strong> A premium set of 3 to 5 pots with handles, crucial for daily curry and rice preparation.</li>
+            <li><strong>Non-Stick Cookware Set:</strong> Perfect for low-oil frying, making rotis, and delicate cooking.</li>
+            <li><strong>Glassware Water Set:</strong> A high-translucency glass jug with 6 matching tumblers.</li>
+            <li><strong>Drawing Room Tea Set:</strong> An aesthetic 17-piece ceramic or bone china tea set for serving evening tea to visitors.</li>
+          </ul>
+        </article>
+      )
+    },
+    {
+      id: 'post-9',
+      slug: 'how-to-clean-burnt-non-stick-pans',
+      title: 'How to Clean Burnt Non-Stick Pans Without Ruining the Coating',
+      description: 'Do not use steel wool! Learn safe, natural methods to restore your non-stick cooking pots using simple household ingredients.',
+      category: 'Quality',
+      readTime: '4 min read',
+      date: 'July 14, 2026',
+      author: 'Madina Care Desk',
+      image: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=800',
+      tags: ['Cookware Cleaning', 'Non-Stick Pots', 'Kitchen Maintenance'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Non-stick cooking pots are a blessing in modern kitchens, making it incredibly easy to cook with minimal oil. However, once food gets burnt on the surface, many homeowners make the mistake of scrubbing with steel scrubbers, completely stripping off the precious PTFE or ceramic coating.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">The Safe Baking Soda & Vinegar Method</h3>
+          <p className="mb-6 leading-relaxed">
+            Instead of harsh scraping, use this gentle, scientific method to loosen stubborn burnt-on grease:
+          </p>
+          <ol className="list-decimal pl-6 mb-6 space-y-3">
+            <li>Fill the pan with water, adding half a cup of white vinegar.</li>
+            <li>Bring the mixture to a gentle boil on your stove for 5 to 10 minutes.</li>
+            <li>Remove from heat, add 2 tablespoons of baking soda, and let it fizz.</li>
+            <li>Wait for the water to cool, then gently wipe away the residues with a soft sponge.</li>
+          </ol>
+        </article>
+      )
+    },
+    {
+      id: 'post-10',
+      slug: 'bone-china-vs-porcelain-dinnerware',
+      title: 'Bone China vs. Porcelain: What Is the Actual Difference?',
+      description: 'Demystifying premium tableware materials. Learn how to tell them apart, why bone china is so highly prized, and when to choose porcelain.',
+      category: 'Materials',
+      readTime: '5 min read',
+      date: 'July 12, 2026',
+      author: 'Material Scientist Desk',
+      image: 'https://images.unsplash.com/photo-1535401991746-da3d9055713e?auto=format&fit=crop&q=80&w=800',
+      tags: ['Bone China', 'Porcelain', 'Dinnerware Materials'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            When investing in premium crockery, you will often find bone china and porcelain competing for your attention. While both look exquisite, they differ significantly in raw material composition, weight, and light transmission.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">The Secret of Bone Ash</h3>
+          <p className="mb-6 leading-relaxed">
+            <strong>Bone China</strong> is made by incorporating actual animal bone ash (typically 30% to 50%) into the clay mixture. This unique addition allows the clay to be fired at extremely high temperatures while maintaining a thin, highly translucent body that is incredibly strong and resistant to chipping.
+          </p>
+          <p className="mb-6 leading-relaxed">
+            <strong>Porcelain</strong>, on the other hand, is made from kaolin clay, feldspar, and quartz. It is completely vegetarian, slightly heavier, and offers a cool, bright-white tone, whereas bone china has a softer, warm, milky-white appearance.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-11',
+      slug: 'wholesale-crockery-market-sargodha',
+      title: 'A Local Guide to Sargodha\'s Wholesale Crockery Market in Karkhana Bazaar',
+      description: 'Navigating the historic Karkhana Bazaar. Learn how to find the best wholesale rates for bulk orders, dinnerware, and steel crockery.',
+      category: 'Local Legacy',
+      readTime: '6 min read',
+      date: 'July 11, 2026',
+      author: 'M. Harun Khokhar',
+      image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800',
+      tags: ['Karkhana Bazaar', 'Sargodha wholesale', 'Market Guide'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            For generations, Karkhana Bazaar in Sargodha has been the epicenter of trade for crockery and household utensils across the division. Families from nearby towns like Bhalwal, Sillanwali, Shahpur, and Kot Momin travel to Karkhana Bazaar to secure authentic products at genuine wholesale rates.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Navigating the Bazaar</h3>
+          <p className="mb-6 leading-relaxed">
+            The market is packed with vendors, but for the absolute best combination of historical expertise (since 1949) and certified direct wholesale prices, look for <strong>Madina Crockery Store</strong> in Karkhana Bazaar, Block 6. We offer direct-from-factory pricing on all ceramic, melamine, and steel items, saving you the retail middleman markup.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-12',
+      slug: 'heavy-gauge-steel-crockery-benefits',
+      title: 'Why Heavy Gauge Stainless Steel Crockery is a Lifetime Investment',
+      description: 'Why thick gauge matters in stainless steel. Discover the health, heat distribution, and durability benefits of buying quality steel utensils.',
+      category: 'Materials',
+      readTime: '4 min read',
+      date: 'July 09, 2026',
+      author: 'Madina Ceramic Expert',
+      image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&q=80&w=800',
+      tags: ['Steel Crockery', 'Heavy Gauge', 'Stainless Steel'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Cheap stainless steel pots might look shiny on the outside, but they warp, dent, and burn food quickly due to thin walls. Investing in heavy-gauge stainless steel (such as 18/10 or high-grade food-safe alloys) is the single smartest decision for any active Pakistani household.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">The Power of Thickness</h3>
+          <p className="mb-6 leading-relaxed">
+            Heavy gauge cookware distributes heat uniformly, preventing hot spots that scorch food. Furthermore, thick steel doesn\'t react with acidic ingredients like tomatoes or yogurt, keeping your curries healthy, safe, and rich in natural taste.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-13',
+      slug: 'choosing-the-right-dinnerware-set',
+      title: 'How to Choose the Right Size and Shape of Dinnerware Set for Your Cabinet',
+      description: 'Avoid cabinet clutter. Learn how to measure your kitchen cabinets and choose space-saving stackable plates that match your storage.',
+      category: 'Buying Guide',
+      readTime: '5 min read',
+      date: 'July 08, 2026',
+      author: 'Madina Buying Desk',
+      image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&q=80&w=800',
+      tags: ['Cabinet Storage', 'Buying Dinnerware', 'Table Settings'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            There is nothing more frustrating than buying a gorgeous, expensive dinner set only to find that the large dinner plates don\'t fit inside your kitchen cabinets, or that the soup bowls cannot be stacked without toppling over.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Key Measurements to Check</h3>
+          <p className="mb-6 leading-relaxed">
+            Before visiting our showroom, take a quick measurement of your cabinet depth and shelf height. Standard plates range from 10 to 11 inches in diameter. If you have limited space, look for low-profile stackable designs like tempered opal glass, which pack maximum piece-count into minimal vertical space.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-14',
+      slug: 'caring-for-fancy-gold-plated-crockery',
+      title: 'How to Wash and Care for Fancy Gold-Plated and Hand-Painted Crockery',
+      description: 'Preserve the gold trim! Learn safe washing techniques, storage tips, and why you should never microwave metallic dinnerware.',
+      category: 'Quality',
+      readTime: '5 min read',
+      date: 'July 06, 2026',
+      author: 'Madina Care Desk',
+      image: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=800',
+      tags: ['Luxury Plates', 'Gold Plated Dishes', 'Care Tips'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Fancy crockery sets with hand-painted patterns or delicate 24k gold leaf borders look magnificent on your table, but they are highly vulnerable to aggressive dishwashing detergents, acidic food stains, and microwave radiation.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Golden Rules of Care</h3>
+          <p className="mb-6 leading-relaxed">
+            Never put gold-rimmed plates in a microwave; the metal trim will spark and permanently damage both the plate and your appliance. Always hand-wash these delicate items using a soft microfiber sponge and mild liquid soap. Avoid placing them directly on top of each other in stacks without using soft felt or paper separators.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-15',
+      slug: 'glassware-buying-guide-for-home',
+      title: 'The Ultimate Glassware Buying Guide for Modern Pakistani Homes',
+      description: 'Choosing durable and safe glasses. Discover the differences between soda-lime glass, lead-free crystal, and borosilicate glassware.',
+      category: 'Buying Guide',
+      readTime: '4 min read',
+      date: 'July 05, 2026',
+      author: 'Madina Buying Desk',
+      image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=800',
+      tags: ['Glassware', 'Water Sets', 'Opal Glass'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            From serving cold lemonade in hot summers to hot green tea in winters, glassware is a vital part of Pakistani hospitality. But how do you select glasses that won\'t shatter under thermal shock?
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Selecting the Right Glass Type</h3>
+          <p className="mb-6 leading-relaxed">
+            For hot tea or coffee, always ask for <strong>borosilicate glass</strong>, which handles rapid temperature changes without cracking. For cold water and daily juices, high-quality, lead-free soda-lime glass is perfectly safe, dishwasher-friendly, and highly affordable.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-16',
+      slug: 'best-non-stick-cookware-brands',
+      title: 'What Makes Non-Stick Cookware the Best Choice for Healthy Oil-Free Cooking',
+      description: 'Understand the science behind non-stick coatings. Learn how to cook with minimal oil while keeping your non-stick pans in pristine condition.',
+      category: 'Buying Guide',
+      readTime: '5 min read',
+      date: 'July 03, 2026',
+      author: 'Healthy Cooking Desk',
+      image: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=800',
+      tags: ['Healthy Cooking', 'Non-Stick Pans', 'Diet cookware'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Reducing oil consumption is a major priority for health-conscious individuals. Premium non-stick cookware allows you to prepare local specialties like rotis, omelets, and chicken curries with just a few drops of healthy olive or canola oil.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Choosing Quality Coatings</h3>
+          <p className="mb-6 leading-relaxed">
+            When buying non-stick pots, look for PFOA-free certifications and multi-layer granite or ceramic coatings. These coatings provide incredible durability and scratch resistance compared to cheap single-layer Teflon pans.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-17',
+      slug: 'crockery-checklist-for-restaurants',
+      title: 'Complete Commercial Crockery Checklist for Restaurants, Cafes, and Caterers',
+      description: 'Commercial grade specs! Learn how to buy high-density, double-fired hotelware that resists heavy abuse and daily washing cycles.',
+      category: 'Events',
+      readTime: '6 min read',
+      date: 'July 02, 2026',
+      author: 'Madina Events Desk',
+      image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800',
+      tags: ['Commercial Crockery', 'Restaurant Supplies', 'Bulk Orders'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Commercial environments are brutal on dinnerware. Plates are constantly stacked, thrown into commercial dishwashers, and handled roughly by busy staff. Domestic crockery simply cannot survive more than a few weeks in a busy restaurant or cafe.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">What is Commercial Grade Tableware?</h3>
+          <p className="mb-6 leading-relaxed">
+            Commercial-grade crockery (hotelware) is double-fired at exceptionally high temperatures, resulting in a fully vitrified, non-porous body. It features rolled rims to prevent chipping and high-resistance glazes to withstand thousands of knife scrapes without scratching. Madina Crockery Store provides special commercial pricing for restaurant owners.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-18',
+      slug: 'history-of-crockery-trade-sargodha',
+      title: 'The Legacy and History of the Crockery Trade in Sargodha Since 1949',
+      description: 'A nostalgic look back. Learn how Karkhana Bazaar grew to become the primary kitchenware trade center of central Punjab.',
+      category: 'Local Legacy',
+      readTime: '5 min read',
+      date: 'June 28, 2026',
+      author: 'M. Harun Khokhar',
+      image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800',
+      tags: ['Sargodha History', 'Heritage trade', 'Since 1949'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            The crockery trade in Sargodha is deeply intertwined with the history of Pakistan. Following the partition in 1947, skilled artisans and merchants gathered in Sargodha\'s Karkhana Bazaar to build a regional hub for home goods, bringing in high-quality clay pots and later, stainless steel utensils.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Madina Crockery Store\'s Pioneer Role</h3>
+          <p className="mb-6 leading-relaxed">
+            Founded in 1949, Madina Crockery Store was one of the very first dedicated crockery showrooms in Karkhana Bazaar. Over the past 75+ years, we have transitioned from selling traditional brass and clay vessels to fancy imported bone china and premium non-stick cookware, always remaining loyal to our founding philosophy of wholesale honesty.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-19',
+      slug: 'how-to-store-expensive-dinner-sets',
+      title: 'Smart and Safe Ways to Store Expensive Dinner Sets in Small Kitchens',
+      description: 'Maximize your cabinet space. Learn how to store your fancy wedding china without cracking, chipping, or scratching the glazed finish.',
+      category: 'Buying Guide',
+      readTime: '4 min read',
+      date: 'June 26, 2026',
+      author: 'Madina Buying Desk',
+      image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&q=80&w=800',
+      tags: ['Dinner set storage', 'Organizing kitchen', 'Cabinet Hacks'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            For most families, their high-end dinnerware sets are reserved for special occasions like Eid or family celebrations. Storing these sets safely in a compact Pakistani kitchen requires careful planning to prevent accidental damage during daily kitchen activities.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Best Storage Practices</h3>
+          <p className="mb-6 leading-relaxed">
+            Use vertical plate racks to store plates on their sides rather than stacking them directly, which puts stress on the center. If you must stack them, place felt protectors or soft paper towels between plates to buffer any mechanical impact. Store heavy serving bowls on the lowest shelves of your cabinets.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-20',
+      slug: 'melamine-crockery-safety-guide',
+      title: 'Is Melamine Crockery Safe? High-Quality Food-Grade Melamine vs. Cheap Dupes',
+      description: 'Understanding melamine safety. Learn how to verify 100% food-grade melamine and why you should never use it in high-heat microwaves.',
+      category: 'Quality',
+      readTime: '5 min read',
+      date: 'June 25, 2026',
+      author: 'Material Scientist Desk',
+      image: 'https://images.unsplash.com/photo-1535401991746-da3d9055713e?auto=format&fit=crop&q=80&w=800',
+      tags: ['Melamine Safety', 'Food Grade', 'Dishware guide'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Melamine crockery is highly popular due to its break-resistant nature, stunning designs, and light weight. However, some health concerns exist regarding melamine chemical migration into food.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Food-Grade Certification Matters</h3>
+          <p className="mb-6 leading-relaxed">
+            High-quality, 100% food-grade melamine is completely non-toxic and safe for daily warm foods. Health risks only arise when using cheap, non-certified chemical duplicates, or when putting melamine in microwave ovens, which degrades the polymer structure. Always buy certified brands from reputable wholesale suppliers.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-21',
+      slug: 'best-cutlery-sets-buying-guide',
+      title: 'How to Select the Perfect Stainless Steel Cutlery Set: Weight, Design, and Polish',
+      description: 'From spoons to forks! A complete buying guide on choosing highly polished, premium weight cutlery sets that won\'t rust.',
+      category: 'Buying Guide',
+      readTime: '5 min read',
+      date: 'June 24, 2026',
+      author: 'Madina Buying Desk',
+      image: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=800',
+      tags: ['Spoons and Forks', 'Cutlery Set', 'Polishing standard'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            A beautiful dinner table is incomplete without a matching cutlery set. The weight, hand-feel, and polish of your spoons, knives, and forks significantly impact your guests\' overall dining comfort.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">The Chromium and Nickel Ratio</h3>
+          <p className="mb-6 leading-relaxed">
+            When buying stainless steel cutlery, look for the grading stamps: 18/10 represents 18% chromium (for rust resistance) and 10% nickel (for that stunning, silver-like mirror shine). Always choose spoons with comfortable, rounded handles and substantial weight to ensure structural longevity.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-22',
+      slug: 'traditional-clay-pots-vs-modern-pots',
+      title: 'Traditional Clay Cooking Pots vs. Modern Non-Stick Cookware: A Comparative Guide',
+      description: 'Ancient vs Modern. Learn the pros and cons of cooking in traditional earthenware handis compared to contemporary non-stick cookware.',
+      category: 'Materials',
+      readTime: '4 min read',
+      date: 'June 22, 2026',
+      author: 'Healthy Cooking Desk',
+      image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&q=80&w=800',
+      tags: ['Clay Pots', 'Non Stick Pots', 'Tradition vs Modern'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Pakistani cuisine is famous for its slow-cooked stews like Karahis, Haleem, and Nihari. Earthenware clay pots (handis) have been used for centuries, but modern non-stick cookware has become the default option for modern apartments.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Taste vs. Convenience</h3>
+          <p className="mb-6 leading-relaxed">
+            Clay pots are porous, allowing heat and steam to circulate slowly, creating an incredibly rich, smoky flavor profile. However, they require careful seasoning and slow cooking, and can crack easily. Modern non-stick cookware offers instant heat-up, fast cooking, and effortless dishwasher cleanup, making it highly efficient for busy modern lifestyles.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-23',
+      slug: 'host-perfect-dinner-party-crockery',
+      title: 'How to Arrange and Present Table Crockery for the Perfect Eid or Family Dinner Party',
+      description: 'Master the art of table setting! A complete visual guide to arranging plates, bowls, cutlery, and water sets for Pakistani home dinners.',
+      category: 'Events',
+      readTime: '5 min read',
+      date: 'June 21, 2026',
+      author: 'Madina Events Desk',
+      image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=800',
+      tags: ['Eid Dinner', 'Table arrangement', 'Party Host'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Hosting a successful family gathering or Eid dinner party goes beyond serving delicious food. Presenting your culinary creations on beautiful, correctly arranged crockery sets establishes a premium atmosphere of warmth and hospitality.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">The Standard Layout</h3>
+          <p className="mb-6 leading-relaxed">
+            Place the main flat dinner plate at the center of each seat. Place the bread or salad plate directly on top of it, and the small soup bowl on top of the salad plate. Put your forks to the left and knives and spoons to the right of the plates, always aligning the bottom edges. Glasses should sit at the top right of the plate.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-24',
+      slug: 'selecting-elegant-tea-sets-pakistan',
+      title: 'Selecting Elegant Tea Sets for Your Drawing Room in Pakistan: Ceramic vs. Glass',
+      description: 'Sip tea in style! Discover which tea set materials look the most sophisticated and hold heat the longest for evening guests.',
+      category: 'Buying Guide',
+      readTime: '4 min read',
+      date: 'June 19, 2026',
+      author: 'Madina Buying Desk',
+      image: 'https://images.unsplash.com/photo-1535401991746-da3d9055713e?auto=format&fit=crop&q=80&w=800',
+      tags: ['Tea Sets', 'Pakistani Drawing Room', 'Ceramic Teapots'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Tea is the ultimate socializing ritual in Pakistan. When close friends or prospective family members visit your drawing room, serving hot, fragrant tea in an elegant tea set is a point of personal pride.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Fine Porcelain vs. Minimalist Glass</h3>
+          <p className="mb-6 leading-relaxed">
+            Fine porcelain or bone china sets with traditional floral patterns offer a classic luxury feel that never goes out of style. If you want a contemporary, modern loft feel, opt for transparent borosilicate glass tea sets, which showcase the rich golden color of the tea.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-25',
+      slug: 'why-choose-double-walled-glassware',
+      title: 'Why Double-Walled Borosilicate Glassware is Perfect for Tea and Coffee Enthusiasts',
+      description: 'Thermal comfort! Learn how double-walled glass mugs keep your hot tea warm while remaining perfectly cool to touch.',
+      category: 'Materials',
+      readTime: '4 min read',
+      date: 'June 17, 2026',
+      author: 'Madina Ceramic Expert',
+      image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=800',
+      tags: ['Double Wall Glass', 'Borosilicate', 'Hot Tea'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Double-walled glassware is a marvelous design feat that has taken the modern culinary world by storm. It features an outer glass body and an inner glass pocket separated by a vacuum barrier.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">The Magic of Thermal Isolation</h3>
+          <p className="mb-6 leading-relaxed">
+            Because of the insulating air gap between the two glass layers, hot tea or coffee stays hot for twice as long. Simultaneously, the outer glass surface remains perfectly cool to the touch, and cold juices won\'t sweat condensation onto your precious wood furniture.
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-26',
+      slug: 'wedding-jahez-crockery-checklist',
+      title: 'The Ultimate Wedding Jahez Crockery Checklist: All-in-One Bride\'s Guide',
+      description: 'Planning a wedding in Sargodha? Download our comprehensive, budget-friendly crockery list for a completely functional new home.',
+      category: 'Events',
+      readTime: '6 min read',
+      date: 'June 16, 2026',
+      author: 'M. Harun Khokhar',
+      image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=800',
+      tags: ['Wedding Checklist', 'Bride Jahez', 'Complete Package'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            For parents preparing a wedding jahez for their daughters, organizing the kitchenware can be a daunting process. Many end up overspending on redundant fancy items while forgetting daily cooking essentials.
+          </p>
+          <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Structured Kitchen Package</h3>
+          <p className="mb-6 leading-relaxed">
+            To make this easy, our specialists at Madina Crockery Store have curated a structured bridal kitchen checklist. It divides your kitchen needs into 4 pillars: formal dinner sets, everyday breakproof dinnerware, glassware sets, and heavy-gauge pots & cutlery. Visit our Sargodha branch to get pre-packaged wholesale bundles that include all these items at discounted prices!
+          </p>
+        </article>
+      )
+    },
+    {
+      id: 'post-27',
+      slug: 'reasons-to-buy-wholesale-crockery',
+      title: 'Top 5 Reasons to Buy Crockery from a Wholesale Dealer Rather Than Retail Outlets',
+      description: 'Maximize your savings! Discover why buying crockery direct from wholesale showrooms like Madina Crockery makes sense for everyone.',
+      category: 'Buying Guide',
+      readTime: '5 min read',
+      date: 'June 14, 2026',
+      author: 'M. Harun Khokhar',
+      image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800',
+      tags: ['Wholesale buying', 'Save Money', 'Direct Showroom'],
+      content: (
+        <article className="prose max-w-none text-text-primary">
+          <p className="mb-6 leading-relaxed">
+            Whether you are buying a single premium dinner set or setting up an entire household kitchen, where you buy matters just as much as what you buy. Here are 5 reasons to skip retail shopping malls and buy direct from wholesale dealers:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li><strong>Up to 40% Cost Savings:</strong> Wholesale dealers buy directly from factories in bulk, completely bypassing retail middleman markups.</li>
+            <li><strong>Genuine Replacement Parts:</strong> If you accidentally break a plate from a wholesale set years later, wholesale stores can easily source exact matches from bulk stocks.</li>
+            <li><strong>Premium Quality Grading:</strong> Wholesale dealers inspect factory outputs directly, ensuring you receive high-density first-grade pieces rather than retail visual defects.</li>
+            <li><strong>Customized Package Assemblies:</strong> Wholesale stores can mix and match sets to suit your custom requirements.</li>
+            <li><strong>Durable Commercial-Grade Inventory:</strong> Access heavy-duty plates and cutlery designed for longevity.</li>
+          </ul>
+        </article>
+      )
     }
   ];
 

@@ -33,7 +33,7 @@ export default function StructuredData() {
     "ratingValue": "4.8",
     "bestRating": "5",
     "worstRating": "1",
-    "ratingCount": "352",
+    "ratingCount": "38",
     "reviewCount": "12"
   };
 
