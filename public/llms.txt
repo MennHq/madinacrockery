@@ -1,0 +1,45 @@
+# Madina Crockery Store
+
+> Sargodha's premier wholesale crockery supplier since 1949. Offering quality steel crockery, dinnerware, bone china, non-stick cookware, and wedding jahez supplies at wholesale rates.
+
+## Core Navigation Pages
+
+- [/](https://madinacrockery.vercel.app/) - **Home**: Overview of wholesale crockery supplies, featured categories (Premium Dinnerware, Heavy-Gauge Steel, Commercial cookware), customer testimonials, and contact inquiry portal.
+- [/about](https://madinacrockery.vercel.app/about) - **About Us**: The history of Madina Crockery Store (serving since 1949 in Sargodha), our values, quality assurance, and wholesale supply commitments.
+- [/contact](https://madinacrockery.vercel.app/contact) - **Contact**: Find location directions, operating hours, phone numbers, and WhatsApp links, or send an inquiry via our interactive contact form.
+- [/faq](https://madinacrockery.vercel.app/faq) - **FAQ**: Frequently asked questions about shipping, wholesale orders, customized dinner sets, pricing, returns, and store policies.
+- [/blog](https://madinacrockery.vercel.app/blog) - **Blog**: A comprehensive library of crockery guides, material comparisons, care instructions, and wedding checklists.
+
+---
+
+## Detailed Blog Articles
+
+Expert guides, buying checklists, and care instructions:
+
+- [/blog?post=best-crockery-shop-sargodha](https://madinacrockery.vercel.app/blog?post=best-crockery-shop-sargodha) - **Sargodha's Best Crockery Shop**: Why Madina Crockery Store is the top destination for premium and wholesale dinnerware in the region.
+- [/blog?post=everyday-dishes-material-guide](https://madinacrockery.vercel.app/blog?post=everyday-dishes-material-guide) - **Everyday Dishes Material Guide**: How to choose the best materials (melamine, stoneware, porcelain) for daily household use.
+- [/blog?post=how-to-identify-high-quality-plates](https://madinacrockery.vercel.app/blog?post=how-to-identify-high-quality-plates) - **How to Identify High-Quality Plates**: Key indicators of premium craftsmanship, weight distribution, and glaze durability.
+- [/blog?post=wedding-dishes-on-budget-guide](https://madinacrockery.vercel.app/blog?post=wedding-dishes-on-budget-guide) - **Wedding Dishes on a Budget**: Practical tips for selecting beautiful bridal dinner sets without overspending.
+- [/blog?post=ceramic-vs-porcelain-plates-comparison](https://madinacrockery.vercel.app/blog?post=ceramic-vs-porcelain-plates-comparison) - **Ceramic vs. Porcelain Plates**: An in-depth structural, aesthetic, and durability comparison.
+- [/blog?post=durable-non-chipping-dishes-guide](https://madinacrockery.vercel.app/blog?post=durable-non-chipping-dishes-guide) - **Durable Non-Chipping Dishes**: Guide to finding dinnerware sets engineered to resist edge chipping and scratch marks.
+- [/blog?post=stoneware-vs-ceramic-crockery-difference](https://madinacrockery.vercel.app/blog?post=stoneware-vs-ceramic-crockery-difference) - **Stoneware vs. Ceramic**: Understanding the manufacturing, firing, and usability differences.
+- [/blog?post=essential-crockery-for-pakistani-weddings](https://madinacrockery.vercel.app/blog?post=essential-crockery-for-pakistani-weddings) - **Pakistani Wedding Crockery Essentials**: Comprehensive lists of must-have items for traditional dowry/jahez set.
+- [/blog?post=how-to-clean-burnt-non-stick-pans](https://madinacrockery.vercel.app/blog?post=how-to-clean-burnt-non-stick-pans) - **Cleaning Burnt Non-Stick Pots**: Safe, non-abrasive methods to restore non-stick surface performance.
+- [/blog?post=bone-china-vs-porcelain-dinnerware](https://madinacrockery.vercel.app/blog?post=bone-china-vs-porcelain-dinnerware) - **Bone China vs. Porcelain**: Comparing weight, translucency, premium status, and structural strength.
+- [/blog?post=wholesale-crockery-market-sargodha](https://madinacrockery.vercel.app/blog?post=wholesale-crockery-market-sargodha) - **Wholesale Crockery Sargodha**: A guide to buying bulk kitchenware, cutlery, and commercial dinner sets in Sargodha.
+- [/blog?post=heavy-gauge-steel-crockery-benefits](https://madinacrockery.vercel.app/blog?post=heavy-gauge-steel-crockery-benefits) - **Heavy Gauge Steel Crockery**: The hygiene, life-cycle value, and industrial benefits of thick-gauge steel dining sets.
+- [/blog?post=choosing-the-right-dinnerware-set](https://madinacrockery.vercel.app/blog?post=choosing-the-right-dinnerware-set) - **Dinnerware Buying Guide**: Factors to consider such as shape, size, color, storage compatibility, and dishwashing safety.
+- [/blog?post=caring-for-fancy-gold-plated-crockery](https://madinacrockery.vercel.app/blog?post=caring-for-fancy-gold-plated-crockery) - **Gold-Plated Crockery Care**: How to wash, polish, and store gold-lined and metallic-decorated chinaware.
+- [/blog?post=glassware-buying-guide-for-home](https://madinacrockery.vercel.app/blog?post=glassware-buying-guide-for-home) - **Glassware Buying Guide**: Deciding between lead-free crystal, borosilicate, tempered glass tumblers, and water sets.
+- [/blog?post=best-non-stick-cookware-brands](https://madinacrockery.vercel.app/blog?post=best-non-stick-cookware-brands) - **Best Non-Stick Cookware Brands**: Evaluation of premium cookware lines, safe coatings (PFOA-free), and heat distribution.
+- [/blog?post=crockery-checklist-for-restaurants](https://madinacrockery.vercel.app/blog?post=crockery-checklist-for-restaurants) - **Restaurant Crockery Checklist**: Industrial cutlery, heavy-duty plates, buffet platters, and durable cafe mugs.
+- [/blog?post=history-of-crockery-trade-sargodha](https://madinacrockery.vercel.app/blog?post=history-of-crockery-trade-sargodha) - **Sargodha's Crockery Trade History**: A look back at how Sargodha became a central hub for glass and ceramic distribution in Punjab.
+- [/blog?post=how-to-store-expensive-dinner-sets](https://madinacrockery.vercel.app/blog?post=how-to-store-expensive-dinner-sets) - **Safe Dinner Set Storage**: Prevention of glaze fading, stacked scratching, and accidental chips during long-term display.
+- [/blog?post=melamine-crockery-safety-guide](https://madinacrockery.vercel.app/blog?post=melamine-crockery-safety-guide) - **Melamine Safety Guide**: Best practices for food-grade melamine use, temperature thresholds, and microwave restrictions.
+- [/blog?post=best-cutlery-sets-buying-guide](https://madinacrockery.vercel.app/blog?post=best-cutlery-sets-buying-guide) - **Cutlery Selection Guide**: Evaluating 18/10 stainless steel, gold-plating, handle designs, and luxury flatware cases.
+- [/blog?post=traditional-clay-pots-vs-modern-pots](https://madinacrockery.vercel.app/blog?post=traditional-clay-pots-vs-modern-pots) - **Clay Handis vs. Modern Pots**: Exploring slow cooking heat retention benefits versus fast modern non-stick and steel options.
+- [/blog?post=host-perfect-dinner-party-crockery](https://madinacrockery.vercel.app/blog?post=host-perfect-dinner-party-crockery) - **Dinner Party Table Settings**: Impressing guests with curated accent plates, soup tureens, chargers, and coordinating cutlery.
+- [/blog?post=selecting-elegant-tea-sets-pakistan](https://madinacrockery.vercel.app/blog?post=selecting-elegant-tea-sets-pakistan) - **Elegant Tea Sets in Pakistan**: The art of choosing ceramic, bone china, or glass tea cups, saucers, and kettles for guests.
+- [/blog?post=why-choose-double-walled-glassware](https://madinacrockery.vercel.app/blog?post=why-choose-double-walled-glassware) - **Double-Walled Glassware Benefits**: Thermal insulation advantages, condensation prevention, and aesthetic elegance.
+- [/blog?post=wedding-jahez-crockery-checklist](https://madinacrockery.vercel.app/blog?post=wedding-jahez-crockery-checklist) - **Bridal Jahez Crockery Checklist**: Structured Pakistani wedding inventory planner covering guest dinnerware, tea sets, daily kitchenware, and luxury buffet trays.
+- [/blog?post=reasons-to-buy-wholesale-crockery](https://madinacrockery.vercel.app/blog?post=reasons-to-buy-wholesale-crockery) - **Benefits of Wholesale Sourcing**: Save money, gain bulk customization privileges, and secure consistent product stock.
