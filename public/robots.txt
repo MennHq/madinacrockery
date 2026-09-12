@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://madinacrockery.vercel.app/sitemap.xml
+# LLMs: https://madinacrockery.vercel.app/llms.txt
